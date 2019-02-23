@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="BMI Value"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/purple"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtheightName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Height"
+                android:textColor="@color/purple"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtheightmeas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Meter"
+                android:textColor="@color/purple"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="ex : 1.83m"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="25dp"
+            android:textColor="@color/purple"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtweightName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Weight"
+                android:textColor="@color/purple"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtweightmeas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kg"
+                android:textColor="@color/purple"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="ex : 90kg"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/white"
+            android:textSize="25dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/purple"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_shape"
+        android:onClick="ConvertClick"
+        android:text="@string/CONVERT"
+        android:textColor="@color/purple" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Normal Weight"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/purple"/>
+
+            <TextView
+                android:id="@+id/txtBMIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:text="0.00"
+                android:textSize="90dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/purple" />
+
+            <ImageView
+                android:id="@+id/imvLevel"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@color/purple" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
